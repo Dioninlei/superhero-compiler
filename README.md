@@ -1,9 +1,5 @@
 # 🦸‍♂️ SuperHero Programming Language Compiler
 
-A mini-compiler for the custom-designed **SuperHero Programming Language**, written in Python. The compiler translates `.hero` source code into C, compiles it using `gcc`, and generates executable machine code.
-
----
-
 ## 📦 Features
 
 ✅ Lexical analysis  
@@ -11,10 +7,6 @@ A mini-compiler for the custom-designed **SuperHero Programming Language**, writ
 ✅ C code generation  
 ✅ Compilation to executable using GCC or MSVC  
 ✅ Supports keywords like `ironman`, `thor`, `starlord`, `spiderman`, `falcon`, `hawkeye`, `loki`, and more.
-
----
-
-# SuperHero Programming Language Compiler
 
 ## Introduction
 
@@ -180,7 +172,7 @@ def compile_superhero(source_file, output_file=None, verbose=False):
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/superhero-compiler.git
+   git clone https://github.com/Dioninlei/superhero-compiler.git
    cd superhero-compiler
    ```
 
@@ -188,6 +180,10 @@ def compile_superhero(source_file, output_file=None, verbose=False):
    ```
    chmod +x superhero_compiler.py
    ```
+
+3. For Windows users:
+python -m pip install --upgrade pip
+Ensure you have a C compiler installed (MinGW or MSVC). The compiler will automatically detect and use available compilers.
 
 ### Usage
 
@@ -429,4 +425,4 @@ Feel free to contribute to the project by adding new superhero commands or enhan
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under with Avengers.
