@@ -1,4 +1,34 @@
-falcon loop_start:
-ironman
-thor
-hawkeye loop_start
+hero> Test 4: Arithmetic operations and cell references
+starlord "Testing arithmetic operations!"
+
+hero> Initialize cells
+hulk 5                    hero> Cell 0 = 5
+superman
+hulk 3                    hero> Cell 1 = 3
+superman
+hulk 7                    hero> Cell 2 = 7
+
+hero> Test addition
+deadpool                  hero> Back to cell 0
+add vision 10             hero> Add 10 to current cell
+starlord "Result of 5 + 10 = "
+thornum                   hero> Print result (15)
+
+hero> Test cell reference addition
+superman                  hero> Move to cell 1
+add vision #0             hero> Add value from cell 0 to current cell
+starlord "Result of 3 + 15 = "
+thornum                   hero> Print result (18)
+
+hero> Test subtraction
+superman                  hero> Move to cell 2
+sub vision 2              hero> Subtract 2 from current cell
+starlord "Result of 7 - 2 = "
+thornum                   hero> Print result (5)
+
+hero> Test cell reference subtraction
+sub vision #1             hero> Subtract value from cell 1
+
+deadpool                  hero> Reset pointer
+starlord "Arithmetic test completed!"
+thanos
