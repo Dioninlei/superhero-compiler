@@ -1,1 +1,22 @@
-spiderman end vision ?? 10
+hero> Test 5: String Concatenation Test
+starlord "=== String Concatenation Demo ==="
+
+hero> Initialize arrays
+doctorstrange 50 str1
+doctorstrange 50 str2
+
+hero> Get first string
+starlord "Enter first string (example: Hello):"
+blackpanther into str1
+
+hero> Get second string
+starlord "\nEnter second string (example: World):"
+blackpanther into str2
+starlord "Second string:"
+
+hero> Show concatenated strings
+starlord "\nBoth strings together:"
+captainamerica str1 str2
+
+starlord "\n=== Test completed ==="
+thanos 
