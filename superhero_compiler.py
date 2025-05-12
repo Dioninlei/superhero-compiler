@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-"""
-SuperHero Programming Language Compiler
-A compiler for the SuperHero Programming Language (.hero)
-
-This compiler translates SuperHero code to C as an intermediate representation,
-then uses gcc to compile to executable machine code.
-"""
-
 import sys
 import os
 import re
@@ -17,29 +8,28 @@ import shutil
 from enum import Enum, auto
 
 class TokenType(Enum):
-    """Token types for the SuperHero language lexer"""
     COMMENT = auto()
-    IRONMAN = auto()      # Increment cell
-    BATMAN = auto()       # Decrement cell
-    SUPERMAN = auto()     # Move pointer right
-    WONDERWOMAN = auto()  # Move pointer left
-    FLASH = auto()        # Loop
-    SPIDERMAN = auto()    # If condition
-    THOR = auto()         # Print cell value as char
-    THORNUM = auto()      # Print cell value as number
-    HULK = auto()         # Input to cell
-    DOCTORSTRANGE = auto() # Array declaration
-    BLACKPANTHER = auto()  # Array input
-    CAPTAINAMERICA = auto() # Array output
-    VISION = auto()       # Current cell reference
-    STARLORD = auto()     # Print string
-    DEADPOOL = auto()     # Reset pointer
-    LOKI = auto()         # Clear cell
-    FALCON = auto()       # Label
-    HAWKEYE = auto()      # Goto label
-    THANOS = auto()       # End program
-    ADD = auto()          # Addition
-    SUB = auto()          # Subtraction
+    IRONMAN = auto()
+    BATMAN = auto()
+    SUPERMAN = auto()
+    WONDERWOMAN = auto()
+    FLASH = auto()
+    SPIDERMAN = auto()
+    THOR = auto()
+    THORNUM = auto()
+    HULK = auto()
+    DOCTORSTRANGE = auto()
+    BLACKPANTHER = auto()
+    CAPTAINAMERICA = auto()
+    VISION = auto()
+    STARLORD = auto()
+    DEADPOOL = auto()
+    LOKI = auto()
+    FALCON = auto()
+    HAWKEYE = auto()
+    THANOS = auto()
+    ADD = auto()
+    SUB = auto()
     IDENTIFIER = auto()
     STRING = auto()
     NUMBER = auto()
