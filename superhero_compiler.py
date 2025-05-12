@@ -25,7 +25,8 @@ class TokenType(Enum):
     WONDERWOMAN = auto()  # Move pointer left
     FLASH = auto()        # Loop
     SPIDERMAN = auto()    # If condition
-    THOR = auto()         # Print cell value
+    THOR = auto()         # Print cell value as char
+    THORNUM = auto()      # Print cell value as number
     HULK = auto()         # Input to cell
     DOCTORSTRANGE = auto() # Array declaration
     BLACKPANTHER = auto()  # Array input
@@ -69,6 +70,7 @@ class SuperHeroLexer:
             "flash": TokenType.FLASH,
             "spiderman": TokenType.SPIDERMAN,
             "thor": TokenType.THOR,
+            "thornum": TokenType.THORNUM,
             "hulk": TokenType.HULK,
             "doctorstrange": TokenType.DOCTORSTRANGE,
             "blackpanther": TokenType.BLACKPANTHER,
@@ -364,6 +366,10 @@ class SuperHeroParser:
             self.advance()
             return {"type": "thor"}
         
+        elif token.type == TokenType.THORNUM:
+            self.advance()
+            return {"type": "thornum"}
+        
         elif token.type == TokenType.HULK:
             self.advance()
             args = []
@@ -589,6 +595,10 @@ void thor() {
     printf("%c\\n", tape[ptr]);
 }
 
+void thornum() {
+    printf("%d\\n", tape[ptr]);
+}
+
 void hulk(int direct_val, char direct_char) {
     if (direct_val != -1) {
         tape[ptr] = direct_val;
@@ -700,6 +710,9 @@ int main() {
         
         elif node_type == "thor":
             self.code.append(f"{self.indent()}thor();")
+        
+        elif node_type == "thornum":
+            self.code.append(f"{self.indent()}thornum();")
         
         elif node_type == "starlord":
             text = node.get("text", "")
