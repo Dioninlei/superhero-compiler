@@ -1,3 +1,40 @@
-starlord "Enter a character:"
-hulk
-thor
+hero> Test 3: Control Flow and Conditions
+starlord "=== Control Flow Demo ==="
+
+hero> Test 1: Countdown loop
+starlord "\nStarting countdown from 5:"
+hulk 5                    hero> Set counter to 5
+
+hero> Create a loop using labels
+falcon loop_start:        hero> Loop label
+thornum                   hero> Print current value
+batman                    hero> Decrease counter by 1
+spiderman loop_start vision > 0
+starlord "Countdown completed!"
+
+hero> Test 2: Conditional jump
+starlord "\nTesting conditional jump:"
+hulk 10                   hero> Set value to 10
+starlord "Current value is: "
+thornum                   hero> Print current value (10)
+spiderman jump_here vision > 5
+starlord "Value is greater than 5, jumping..."
+hawkeye end_test
+
+falcon jump_here:
+starlord "Successfully jumped here!"
+
+falcon end_test:
+starlord "\nTesting simple arithmetic:"
+hulk 10                   hero> Start with 10
+starlord "Starting value: "
+thornum                   hero> Print 10
+add vision 5              hero> Add 5 (result: 15)
+starlord "After adding 5: "
+thornum                   hero> Print 15
+sub vision 4              hero> Subtract 2 (result: 13)
+starlord "After subtracting 4: "
+thornum                   hero> Print final result (13)
+
+starlord "\n=== Test completed ==="
+thanos
