@@ -1,1 +1,36 @@
-spiderman end vision ?? 10
+hero> Test 2: Memory Operations Test
+starlord "=== Memory Operations Demo ==="
+
+hero> Store and print characters
+starlord "\nStoring characters in memory:"
+deadpool                  hero> Reset pointer to start
+
+hero> Store 'HERO'
+hulk 72                   hero> Store 'H'
+thor                      hero> Print H
+superman                  hero> Move right
+
+hulk 69                   hero> Store 'E'
+thor                      hero> Print E
+superman                  hero> Move right
+
+hulk 82                   hero> Store 'R'
+thor                      hero> Print R
+superman                  hero> Move right
+
+hulk 79                   hero> Store 'O'
+thor                      hero> Print O
+
+hero> Print them again
+starlord "\nPrinting stored characters again:"
+deadpool                  hero> Back to start
+thor                      hero> Print H
+superman
+thor                      hero> Print E
+superman
+thor                      hero> Print R
+superman
+thor                      hero> Print O
+
+starlord "\n=== Test completed ==="
+thanos 
