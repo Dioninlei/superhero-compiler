@@ -1,1 +1,19 @@
-starlord "Hello from SuperHero!"
+hero> Test 1: Basic operations and I/O
+starlord "Welcome to SuperHero Test 1!"
+
+hulk 65    hero> Store 'A' in current cell
+thor       hero> Print it
+batman     hero> Decrease to 'B'
+thor       hero> Print it
+ironman    hero> Increase to 'C'
+thor       hero> Print it
+
+starlord "Enter a character:"
+hulk       hero> Get user input
+thor       hero> Print it
+
+deadpool   hero> Reset pointer
+loki       hero> Clear cell
+
+starlord "Program completed!"
+thanos     hero> End program
